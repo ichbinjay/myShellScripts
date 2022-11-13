@@ -1,0 +1,6 @@
+cd C:/Users/ADMIN/Downloads
+for i in *
+do
+echo $i
+done
+

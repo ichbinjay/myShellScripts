@@ -1,0 +1,10 @@
+echo "number"
+read n
+
+var=$(($n % 2))
+if [ $var -eq 0 ]
+then
+	echo "even"
+else
+	echo "odd"
+fi

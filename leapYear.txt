@@ -1,0 +1,11 @@
+echo "year"
+read n
+c1=$(($n % 4))
+c2=$(($n % 100))
+c3=$(($n % 400))
+if ([ $c1 -eq 0 ] && ! [ $c2 -eq 0 ]) || ([ $c3 -eq 0 ])
+then
+	echo "leap"
+else
+	echo "not leap"
+fi

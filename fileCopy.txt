@@ -1,0 +1,25 @@
+echo "how many"
+read n
+
+for ((i=0; i<=n; i++ ))
+do
+echo "filename"
+read filename
+
+if [ ! -e $filename ]
+then
+echo "no such file"
+exit 0
+fi
+
+echo "directory path"
+read dir
+if [ ! -e $dir ]
+then 
+echo "no such dir"
+exit 0
+fi
+
+cp $filename $dir
+echo "done"
+done

@@ -1,0 +1,11 @@
+echo "filename"
+read filename
+
+if [ ! -e $filename ]
+then
+echo "no such file"
+else
+echo `wc -l $filename`
+echo `wc -w $filename`
+echo `wc -c $filename`
+fi
